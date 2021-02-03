@@ -108,9 +108,6 @@ def advanced_search(search_phrase, filters={'pages': 2}, type=list):
     else:
         return courses
 
-
-print(simple_search(search_phrase='machine learning', return_type='json'))
-
-# if __name__ == "main":
-#     results = advanced_search("deep learning", filters={'pages': 3})
-#     print(len(results))
+if __name__ == "main":
+    results = advanced_search("deep learning", filters={'pages': 1})
+    print(len(results))

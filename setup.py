@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="ce_scraper",
-    version="0.0.1",
+    version="0.0.2",
     author="Kelem Negasi",
     author_email="kellemnegasi@gmail.com",
     description="A simple python library for scraping some data from coursera",

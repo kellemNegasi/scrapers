@@ -108,7 +108,6 @@ def advanced_search(search_phrase, filters={'pages': 2}, type=list):
     else:
         return courses
 
-
 if __name__ == "main":
-    results = advanced_search("deep learning", filters={'pages': 3})
+    results = advanced_search("deep learning", filters={'pages': 1})
     print(len(results))
