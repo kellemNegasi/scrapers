@@ -94,12 +94,17 @@ def build_url(search_phrase, filters=None):
         return urls
 
 
-def advanced_search(search_phrase, filters={'pages': 2}):
+def advanced_search(search_phrase, filters={'pages': 2},type=list):
     courses = []
     urls = build_url(search_phrase, filters)
     for url in urls:
         courses += get_result(url)
-    return courses
+    if type == 'dataframe':
+        return pd.DataFrame.from_dict(courses, orient='columns')
+    elif type == 'json':
+        return json.dumps(courses)
+    else:
+        return courses
 
 results = advanced_search("deep learning", filters={'pages': 3})
 print(len(results))
