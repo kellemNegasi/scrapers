@@ -120,7 +120,7 @@ these are the supported values of `type` on this release.
  iii. `dataframe`</br>
 
 ## 2. Advanced Search
-To perform the advance search we call the advance search in the search course module <br>
+To perform the advanced search we call the `advanced_search` function in the search course module <br>
 with a dictionary of filters as an argument.
 this feature currently supports only page number as a filter.
 ```python
@@ -129,10 +129,5 @@ courses=search_courses.advanced_search(search_phrase='deep learning', filters={'
 print(courses)
 ```
 The above code searches with key word `deep learning` and returns the courses 
-from two pages result on the coursera page which is around 30 courses. 
+from two pages result on the coursera page which is around 20 courses. 
 More filters and features will be included in the next release of this library.
-
-
-
-
-
