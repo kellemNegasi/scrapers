@@ -1,0 +1,8 @@
+README.md
+setup.py
+ce_scraper/__init__.py
+ce_scraper/search_courses.py
+ce_scraper.egg-info/PKG-INFO
+ce_scraper.egg-info/SOURCES.txt
+ce_scraper.egg-info/dependency_links.txt
+ce_scraper.egg-info/top_level.txt
